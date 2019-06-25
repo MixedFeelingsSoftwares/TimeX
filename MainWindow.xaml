@@ -1,0 +1,34 @@
+﻿<Window x:Name="frmMain" x:Class="TimeX.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeX"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="275.987" Width="500.624" Loaded="FrmMain_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="347*"/>
+            <ColumnDefinition Width="146*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="202*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <ListView x:Name="LV_Events">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Date" Width="100" DisplayMemberBinding="{Binding Date}"/>
+                        <GridViewColumn Header="Due" Width="75" DisplayMemberBinding="{Binding Due}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Button x:Name="btn_createEvent"  Content="Create Event" Click="Btn_createEvent_Click" Margin="5"/>
+        </Grid>
+    </Grid>
+</Window>
