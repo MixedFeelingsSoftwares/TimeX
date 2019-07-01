@@ -42,5 +42,10 @@ namespace TimeX
 
             ListviewHandler.LEvents.Add(lvents);
         }
+
+        private void FrmMain_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

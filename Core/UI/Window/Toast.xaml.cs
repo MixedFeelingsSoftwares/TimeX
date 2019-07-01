@@ -19,17 +19,13 @@ namespace TimeX.Core.UI.ToastWindow
     /// <summary>
     /// Interaction logic for Toast.xaml
     /// </summary>
-    public partial class Toast : Window
+    
+    public partial class Toast : System.Windows.Window
     {
         public Toast()
         {
             InitializeComponent();
         }
-
-        private void FrmToast_Activated(object sender, EventArgs e)
-        {
-        }
-
 
     }
 }

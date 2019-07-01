@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TimeX"
         mc:Ignorable="d"
-        Title="MainWindow" Height="275.987" Width="500.624" Loaded="FrmMain_Loaded">
+        Title="MainWindow" Height="275.987" Width="500.624" Loaded="FrmMain_Loaded" WindowStartupLocation="CenterScreen" Closing="FrmMain_Closing">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="347*"/>

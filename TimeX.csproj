@@ -78,6 +78,7 @@
     <Compile Include="Core\UI\Window\Toast.xaml.cs">
       <DependentUpon>Toast.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Core\UI\Window\ToastNotification.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

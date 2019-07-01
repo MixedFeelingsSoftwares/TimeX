@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using TimeX.Core.UI.ToastWindow;
+using TimeX.Core.UI.Window;
 
 namespace TimeX.Core.UI
 {
@@ -20,8 +21,7 @@ namespace TimeX.Core.UI
 
         private static void LEvents_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
-            Toast toaster = new Toast();
-            toaster.Show();
+            ToastNotification.ShowNotification("asd", "asd1");
         }
     }
 
